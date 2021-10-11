@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Student Management MiniApp</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Student Management MiniApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-3">
+    <h1>Student Management MiniApp</h1>
+    <div class="row pt-4">
+      <div class="col-6">
+        <h4>Add Student</h4>
+		<button class="Show Form Add New Student> Show Form Add New Student</button>
+        <form>
+          <div class="mb-3">
+            <label for="StudentID(NIM)" class="form-label">Student ID(NIM)</label>
+            <input type="text" class="form-control" id="inputProdiName">
+          </div>
+          <div class="mb-3">
+            <label for=FullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="inputProdiAbbreviation">
+		  <div class="mb-3">
+			<label for="Gender" class="form-label">Gender</label>
+			<input type="text" class="form-control" id="Gender">
+          </div>
+		  <div class="mb-3">
+			<label for="" class="form-label">Faculty</label>
+			<input type="text" class="form-control" id="Faculty">
+		  <div class="mb-3">
+			<label for="ProgramofStudy" class="form-label">Program of Study</label>
+			</div>
+	  </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+   </div>
+    
+	<div class="col-6">
+		<h4>Filter Student By</h4>
+		<div class="container">
+		<table backgroundcolor="yellow" borderwidth="1">
+			<tr width=400>
+			<td>--SELECTFACULTY--</td>
+			</tr>
+		<table backgroundcolor="Green" borderwidth="1">
+		<tr>
+		<td><select name="FACULTY">
+		<option value="">--Select Faculty</option>
+			<option value="value">Pascasarjana</option>
+			<option value="value">Fakultas Filsafat</option>
+			<option value="value">Fakultas Keguruan dan Ilmu Pendidik</option>
+			<option value="value">Fakultas Ekonomi dan Bisnis</option>
+			<option value="value">Fakultas Pertanian</option>
+			<option value="value">Fakultas Ilmu Komputer</option>
+			<option value="value">Fakultas Keperawatan</option>
+			<option value="value">Akademi Sekretari Manajemen Indonesia Klabat</option>
+						</select>
+					</td>
+		<td><select name="Program of Study">	
+		<option value="">--Select Program Study</option>
+			<option value="value">Magister Manajemen</option>
+			<option value="value">Magister Teologi</option>
+			<option value="value">Ilmu Filsafat</option>
+			<option value="value">Pendidikan Agama</option>
+			<option value="value">Pendidikan Bahasa Inggris</option>
+			<option value="value">Pendidikan Ekonomi</option>
+			<option value="value">Pendidikan Luar Sekolah</option>
+			<option value="value">Akuntansi</option>
+			<option value="value">Management</option>
+			<option value="value">Agroteknologi</option>
+			<option value="value">Informatika</option>
+			<option value="value">Sistem Informasi</option>
+			<option value="value">Profesi Ners</option>
+			<option value="value">Keperawatan</option>
+			<option value="value">Sekretari</option>
+		</select></td>
+	</div>
+	
+	<div class="col-6">
+		<h4>Our Students</h4>
+		<form class="d-flex">
+			  <input class="form-control me-2" type="search" placeholder="Search Student By Name" aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+
+    <div class="row pt-4 mt-4">
+      <table class="table table-dark table-striped">
+        <tr>
+          <td>Student ID(NIM)</td>
+          <td>Full Name</td>
+          <td>Gender</td>
+		  <td>Faculty</td>
+		  <td>Program of Study</td>
+          <td>Action</td>
+        </tr>
+        <tr>
+          <td>102200632</td>
+          <td>Jennie</td>
+		  <td>Female</td>
+		  <td>Fakultas Ekonomi dan Bisnis</td>
+          <td>Akuntansi</td>
+          <td><a href="#" class="link-danger"><i class="bi bi-trash"></i></a></td>
+        </tr>
+        <tr>
+          <td>102200634</td>
+          <td>Michael</td>
+		  <td>Male</td>
+		  <td>Fakultas Ilmu Komputer</td>
+          <td>Sistem Informasi</td>
+          <td><a href="#" class="link-danger"><i class="bi bi-trash"></i></a></td>
+        </tr>
+        <tr>
+          <<td>102200636</td>
+          <td>Rosie</td>
+		  <td>Female</td>
+		  <td>Fakultas Filsafat</td>
+          <td>Ilmu Filsafat</td>
+          <td><a href="#" class="link-danger"><i class="bi bi-trash"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <footer class="py-4">
+    <hr>
+    <p class="text-center text-uppercase">&copy; 2021 by WebDevelopment Class</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
